@@ -1,0 +1,136 @@
+body{
+    background-image: url("stadium1.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      text-align:center;
+}
+.contain{
+
+    width:700px;
+    height:400px;
+    border:5px solid black;
+    margin:30% ;
+    position:flex;
+    background-color:navy;
+    color:white;
+    /* display: inline; */
+
+}
+.teams{
+    width:700px;
+    height:150px;
+    position:inline-block;
+  /* background-color: aliceblue; */
+}
+.tna{
+    margin-top: 20px;
+    width:700px;
+    height:40px;
+    /* background-color: antiquewhite; */
+
+}
+
+#l{
+    width:100px;
+    height:20px;
+    margin-right:80px;
+    /* background-color: blue; */
+    display: inline;
+}
+#r{
+    width:100px;
+    height:20px;
+    margin-left: 200px;
+    /* background-color: rgb(18, 129, 226); */
+    display:inline;
+}
+
+#t1{
+    width:150px;
+    height:150px;
+    display: inline;
+    margin-right:180px;
+    
+}
+#points{
+    font-size:larger;
+    font-weight:bolder;
+    width:50px;
+    height:50px;
+    display: inline;
+    color:white;
+    margin-right:140px ;
+    /* background-color: aqua; */
+}
+#t2{
+    width:150px;
+    height: 150px;
+    float:right;
+    display: inline;
+    margin-right:40px
+}
+#rounds{
+    width:700px;
+    height:70px;
+    /* display: inline; */
+    background-color: antiquewhite;
+    border:4px solid white;
+    display:inline-block;
+}
+#team1{
+    width:300px;
+    height:70px;
+    /* border: 2px solid rgb(32, 30, 30); */
+  
+  display:inline-block;
+}
+#team2{
+    width:300px;
+    height:70px;
+    /* border: 2px solid rgb(34, 32, 32); */
+    display:inline-block;
+    margin-left:65px;
+}
+#circle{
+    
+    width:40px;
+    height:40px;
+    border-radius:20px;
+    border:2px solid black;
+    display: inline-block;
+    margin-left:5px;
+    margin-top:10px;
+    
+}
+.buttons{
+    width:700px;
+    height:50px;
+    /* border:5px solid rgb(238, 226, 226); */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position:relative;
+        
+}
+#strike{
+    width:350px;
+    height:35px;
+    border-radius:20px;
+    font-size: larger;
+    margin-right:100px;
+    background-color: gree
+}
+#try{
+    font-size: larger;
+    width:200px;
+    height:35px;
+    border-radius:20px;
+}
+#try:hover{
+    background-color:bisque;
+    cursor:grab;
+}
+#strike:hover{
+    background-color:bisque;
+    cursor:grab;
+}
