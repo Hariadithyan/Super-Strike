@@ -33,13 +33,13 @@ else if(count<5){
     if(r1%2==0)
     {
         play1.p1_count++;
-        play1.val.push(r1);
+        // play1.val.push(r1);
         document.getElementById("t1score").textContent=play1.p1_count;
     }
     if(r2%2==0)
     {
         play2.p2_count++;
-        play2.val.push(r2);
+        // play2.val.push(r2);
         document.getElementById("t2score").textContent=play2.p2_count;
     }
     play1.val.push(r1);
@@ -51,11 +51,11 @@ count++;
 function round(){
     play1.val.forEach((a,b)=>{
         if(a%2==0){
-            p1_round[b].style.backgroundColor="green";
+            p1_round[a].style.backgroundColor="green";
         }
         else
         {
-            p1_round[b].style.backgroundColor="red";
+            p1_round[a].style.backgroundColor="red";
         }
     });
     play2.val.forEach((a,b)=>{
