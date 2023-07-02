@@ -33,13 +33,13 @@ else if(count<5){
     if(r1%2==0)
     {
         play1.p1_count++;
-        // play1.val.push(r1);
+        play1.val.push(r1);
         document.getElementById("t1score").textContent=play1.p1_count;
     }
     if(r2%2==0)
     {
         play2.p2_count++;
-        // play2.val.push(r2);
+        play2.val.push(r2);
         document.getElementById("t2score").textContent=play2.p2_count;
     }
     play1.val.push(r1);
