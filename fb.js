@@ -51,15 +51,15 @@ count++;
 function round(){
     play1.val.forEach((a,b)=>{
         if(a%2==0){
-            p1_round[a].style.backgroundColor="green";
+            p1_round[b].style.backgroundColor="green";
         }
         else
         {
-            p1_round[a].style.backgroundColor="red";
+            p1_round[b].style.backgroundColor="red";
         }
     });
     play2.val.forEach((a,b)=>{
-        if(b%2==0){
+        if(a%2==0){
             p2_round[b].style.backgroundColor="green";
         }
         else
