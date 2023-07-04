@@ -11,8 +11,15 @@ var count=0;
 console.log("Strike");
 p1_round=document.getElementById("team1").children;
 p2_round=document.getElementById("team2").children;
+
+document.body.addEventListener("keypress",function(event){
+    if(event.key=="Enter"){
+        // event.preventDefault();
+    document.getElementById("strike").click();
+    }
+});
+
 document.getElementById("strike").onclick=function(){
-   
 
     var r1=Math.floor(Math.random()*100+1);
     var r2=Math.floor(Math.random()*100+1);
