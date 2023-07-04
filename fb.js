@@ -16,14 +16,32 @@ document.getElementById("strike").onclick=function(){
 
     var r1=Math.floor(Math.random()*100+1);
     var r2=Math.floor(Math.random()*100+1);
-    console.log(r1);
-    console.log(r2);
+    
+   
+   
+    if(play1.p1_count>=3 && play2.p2_count<2 && count>3  || play1.p1_count<2 && play2.p2_count>=3  && count>3|| play1.p1_count>=4 && play2.p2_count<=2  && play1.p1_count!=play2.p2_count || play1.p1_count<=2 && play2.p2_count>=4)
+    {
+        console.log(play1.p1_count , " " ,play2.p2_count);
+
+         if(count==6 || count==7){
+            window.location.reload();
+            // console.log("count=7");
+         }
+         console.log("count=*",count);
+
+        count=6;
+    }
+
+     if(count==7){
+        window.location.reload();
+       }
+    
     if(count==5)
     {
         document.getElementById("strike").textContent="Who Wins?";
     }
-  
-   else if(count==6)
+    
+   if(count==6)
    {
     if(play1.p1_count<play2.p2_count){
     document.getElementById("strike").textContent="Match WIN by team MANCHESTER UNITED";
@@ -36,6 +54,7 @@ document.getElementById("strike").onclick=function(){
         document.getElementById("strike").textContent="Match DRAW";
     }
    }
+ 
 else if(count<5){
     if(r1%2==0)
     {
@@ -55,6 +74,7 @@ else if(count<5){
        play2.val.push(r2);
     round();
 }
+
 count++;
 }
 function round(){
