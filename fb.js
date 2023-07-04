@@ -14,7 +14,7 @@ p2_round=document.getElementById("team2").children;
 
 document.body.addEventListener("keypress",function(event){
     if(event.key=="Enter"){
-        // event.preventDefault();
+        event.preventDefault();
     document.getElementById("strike").click();
     }
 });
