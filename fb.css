@@ -165,15 +165,16 @@ body{
 }
 
 h1{
+   
     color:rgb(242, 240, 255);
 }
 
 .fbbcontent{
 
     width:600px;
-    height:350px;
+    height:300px;
     border:5px solid rgb(161, 146, 202);
-    background: linear-gradient(rgb(22, 22, 80),rgb(91, 91, 199),rgba(39, 24, 179, 0.171));
+    background: linear-gradient(rgb(22, 22, 80),rgb(91, 91, 199),rgba(39, 24, 179, 0.39));
     border-radius: 20px;
     align-items: center;
     border:5px blue;
@@ -207,26 +208,25 @@ h1{
     margin:10px
 }
 
-.link{
+/* .link{
     width:150px;
     height:30px;
-    /* margin-top:20px; */
+   
     font-size: 30px;
     font-style: bold;
-    /* border-color: solid black; */
+   
     align-items: center;
     margin-left: auto;
     margin-right:auto;
-    /* border: 5px solid rgb(99, 84, 122); */
+ 
     background-color: rgba(39, 24, 179, 0.171);
-}
+} */
 
-#a1{
+/* #a1{
     width:80px;
     height:20px;
     margin-top: auto;
-    /* padding-top: px; */
-    /* margin-bottom:15px;  */
+ 
   
    color: antiquewhite;
     align-content: center;
@@ -235,12 +235,11 @@ h1{
     width:80px;
     height:20px;
     margin-top: auto;
-    /* padding-top: px; */
-    /* margin-bottom:15px;  */
+   
   
    color: antiquewhite;
     align-content: center;
-}
+} */
 
 #subb{
     width:110px;
@@ -253,6 +252,6 @@ h1{
 #subb:hover{
     color:rgba(221, 215, 245, 0.767);
 }
-#a1:hover,#a2:hover{
+/* #a1:hover,#a2:hover{
     color:rgb(221, 215, 245);
-}
+} */
