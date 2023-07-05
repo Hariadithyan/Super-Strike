@@ -1,3 +1,21 @@
+
+// if(document.getElementById("tname1").value!=null){
+// const new1=document.getElementById("tname1").value;
+// const new2=document.getElementById("tname2").value;
+
+// localStorage.setItem('new1',JSON.stringify(new1));
+// localStorage.setItem('new2',JSON.stringify(new2));
+// }
+var val1=localStorage.getItem("new1"),val2=localStorage.getItem("new2");;
+
+document.getElementById("l").textContent=val1;
+document.getElementById("r").textContent=val2;
+
+// var teamname1=document.getElementById("tname1").value;
+// var oldt1=document.getElementById("l").textContent;
+// console.log(oldt1);
+// console.log(teamname1);
+
 var play1={
     p1_count:0,
     val:[],
@@ -14,7 +32,7 @@ p2_round=document.getElementById("team2").children;
 
 document.body.addEventListener("keypress",function(event){
     if(event.key=="Enter"){
-        event.preventDefault();
+        // event.preventDefault();
     document.getElementById("strike").click();
     }
 });
@@ -51,11 +69,11 @@ document.getElementById("strike").onclick=function(){
    if(count==6)
    {
     if(play1.p1_count<play2.p2_count){
-    document.getElementById("strike").textContent="Match WIN by team MANCHESTER UNITED";
+    document.getElementById("strike").textContent="Match WIN by team "+val2;
    }
     else if(play1.p1_count>play2.p2_count)
     {
-        document.getElementById("strike").textContent="Match WIN by team FC BARCELONA";
+        document.getElementById("strike").textContent="Match WIN by team "+val1;
     }
     else{
         document.getElementById("strike").textContent="Match DRAW";

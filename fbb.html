@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super-Strike</title>
+    <link rel="stylesheet" href="fb.css">
+
+    <script>
+        function Submit() {
+          // Get the value entered by the user
+          var new1 = document.getElementById("tname1").value;
+          var new2 = document.getElementById("tname2").value;
+
+          // var value = input.value; 
+          
+          // Store the value in localStorage
+          localStorage.setItem("new1", new1);
+          localStorage.setItem("new2", new2);
+          
+          // Redirect to the second page
+          // window.location.href = 'page2.html'; 
+        }
+      </script>
+
+
+
+</head>
+<body>
+    <div class="fbbcontent">
+    <h1>Enter The Team Names</h1>
+    <div class="tnam">
+    Team1<input TYPE="TEXT"  id="tname1"  value="A"><br>
+    Team2<input TYPE="TEXT" id="tname2" value="B"><br>
+    <button onClick="Submit()" id="subb">Submit</button><br>
+</div></div>
+<br>
+<div class="link">
+    <a id="a1" href="fb.html">Go to Game</a>
+    <!-- https://hariadithyan.github.io/Super-Strike/fb.html -->
+    </div>
+    <!-- <script type="text/javascript" src="fb.js"></script> -->
+    
+</body>
+</html>
